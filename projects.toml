@@ -1,0 +1,149 @@
+# Portfolio content. One [[project]] block per finished repo, newest first.
+#
+# Every figure here is copied from the project's own README (TL;DR or findings),
+# so the site never says more than the analysis does. Charts are fetched from the
+# project repo at the pinned commit by scripts/fetch_charts.py.
+
+[site]
+name = "Nisha S"
+headline = "Master of Business IT @ La Trobe · AI & ML Graduate · Business Analysis & Digital Transformation"
+intro = "I work at the intersection of business and information systems. Each project below starts from a business question, works on real public data, and ends with what the numbers mean for the business and what to do next."
+github = "https://github.com/nisha1324"
+linkedin = "https://linkedin.com/in/nishashashi"
+email = "nisha.shashi.514@gmail.com"
+
+[[project]]
+slug = "data-structures-in-practice"
+title = "Data Structures in Practice"
+kind = "Algorithms for operations data"
+finished = "2026-10-14"
+question = "How many NYC 311 service requests report an issue that's already open, and where do they come from?"
+stat = "16.9%"
+stat_label = "of 342,390 tickets in March 2026 repeated an issue that was still open at the same building"
+finding = "A hash-map check finds 97.5% of the housing agency's (HPD) own heat duplicate flags and covers the month in 0.23 s, against about 1.4 hours for the naive scan. Matching nearby tickets within 100 m finds 66.8% of the water agency's (DEP) duplicate flags, against 23.3% by exact address."
+so_what = "A repeat check at intake, plus distinct-issue counts next to ticket counts, keeps queues and dashboards from counting the same problem many times."
+stack = ["Python", "hash maps", "heaps", "sweep line", "union-find", "numpy / scipy"]
+data = "NYC Open Data: 311 Service Requests"
+data_url = "https://data.cityofnewyork.us/d/erm2-nwe9"
+chart = "results/charts/01_repeat_share_by_type.png"
+chart_commit = "789c86725d106f37b4035825205044e29b5d0c74"
+chart_alt = "Bar chart of the share of repeat reports for the 15 largest NYC 311 complaint types. HPD heat and hot water is highest at 53%, followed by HPD unsanitary condition and plumbing at 45%."
+
+[[project]]
+slug = "serverless-property-lake"
+title = "Serverless Property Data Lake"
+kind = "Cloud data engineering"
+finished = "2026-10-10"
+question = "Can a monthly government property file land in a cheap, safe, queryable AWS-style data lake, and what does it say about the housing market?"
+stat = "96.2%"
+stat_label = "of new-build sales in the September 2026 release had completed 7+ months earlier"
+finding = "An S3 + Lambda pattern turns the 90,867-row monthly file into validated, address-free Parquet that SQL queries in place, for about $0.05 a month at London list prices. It runs offline on an S3 emulator, and the function's IAM policy is tested with enforcement on."
+so_what = "The latest months are incomplete when published, so a 'latest month' chart shows a slowdown that isn't real: mark the last three months as provisional."
+stack = ["Python", "AWS S3 + Lambda (moto)", "Parquet", "DuckDB", "AWS SAM", "IAM"]
+data = "HM Land Registry Price Paid Data (OGL v3.0)"
+data_url = "https://www.gov.uk/government/statistical-data-sets/price-paid-data-downloads"
+chart = "results/charts/01_registration_lag.png"
+chart_commit = "d7acad05dd5b26abfbb8bf6f4a22ff96be01191d"
+chart_alt = "Grouped bar chart of the time between a sale completing and the release that published it. Most existing-home sales arrive within 2 months, while 70% of new-build sales arrive 7 to 12 months later and 26% after 13 or more months."
+
+[[project]]
+slug = "llm-review-categoriser"
+title = "LLM Review Categoriser"
+kind = "Applied AI / text analytics"
+finished = "2026-10-08"
+question = "Which themes (battery, call quality, durability, service…) drive negative product reviews, so a product team knows what to fix first?"
+stat = "1 in 11"
+stat_label = "negative reviews (46 of 497) say the product doesn't work, broke or died"
+finding = "990 reviews are sorted into 9 business themes (a Claude backend plus an offline keyword baseline, 63.3% accurate on a hand-labelled sample), then split into concrete sub-issues. Only 13 of the 46 'doesn't work' reviews land in the durability theme, and charger faults are almost as common as short battery life (17 vs 19)."
+so_what = "A theme dashboard alone hides product failure. Track it as its own KPI across themes, and fix charger compatibility in listings."
+stack = ["Python", "LLM API (Claude)", "pandas", "evaluation vs gold sample"]
+data = "UCI Sentiment Labelled Sentences (CC BY 4.0)"
+data_url = "https://archive.ics.uci.edu/dataset/331/sentiment+labelled+sentences"
+chart = "results/charts/subissues_baseline.png"
+chart_commit = "0a8d76f3dea202c6dd14d44451c773d94b30e65a"
+chart_alt = "Four bar charts of sub-issues inside the most negative review themes: audio and call quality, battery and power, build durability, and service and delivery. Short battery life (19) and charger faults (17) lead the battery theme."
+
+[[project]]
+slug = "retail-kpi-dashboard"
+title = "Retail KPI Dashboard"
+kind = "Interactive dashboard"
+finished = "2026-10-06"
+question = "Is the business growing, and what is driving the change in revenue year on year?"
+stat = "£1.10M"
+stat_label = "of last year's customer spend (37% of customers) did not come back"
+finding = "A Streamlit dashboard on 1M retail transactions: KPI tiles with year-on-year deltas, country and product drivers, and a customer revenue bridge. Net revenue rose only +2.3% (Jan–Nov 2011 vs 2010) while new customers filled the gap left by lapsed ones; the UK grew +0.2% and non-UK +15.1%."
+so_what = "Flat headline growth hides heavy churn. The first lever is winning back lapsed accounts, then watching the one EIRE account that alone fell by £59.8k."
+stack = ["Python", "Streamlit", "pandas", "Altair", "unit-tested KPIs"]
+data = "UCI Online Retail II (CC BY 4.0)"
+data_url = "https://doi.org/10.24432/C5CG6D"
+chart = "docs/customer_bridge_2011_vs_2010.png"
+chart_commit = "25de61e01bff75d98e8b8f20da3e748514cec976"
+chart_alt = "Horizontal bar chart of the change in net revenue by customer group, Jan–Nov 2011 vs 2010: lost customers minus £1,101k, retained customers spending less minus £341k, new or won-back customers plus £1,386k, no customer ID plus £250k; total plus £195k."
+
+[[project]]
+slug = "ecommerce-funnel-duckdb"
+title = "E-commerce Funnel & Delivery Analysis"
+kind = "SQL case study"
+finished = "2026-10-04"
+question = "Where do marketplace orders leak, and what does late delivery cost in customer satisfaction?"
+stat = "79.1%"
+stat_label = "of orders delivered 8+ days late get a 1–2★ review, vs 9.2% of on-time orders"
+finding = "DuckDB SQL over ~99k orders: 97.1% are delivered, and the 2,888 that aren't carried ~R$414k of item value. 72.3% of late orders left the seller on time, so the carrier leg causes most lateness, and Rio de Janeiro alone is 26.3% of carrier-side late orders."
+so_what = "Set delivery promises by destination and fix the Rio de Janeiro carrier leg: most late orders had already left the seller on time."
+stack = ["SQL", "DuckDB", "Python", "cohort analysis"]
+data = "Olist Brazilian E-commerce (CC BY-NC-SA 4.0)"
+data_url = "https://www.kaggle.com/datasets/olistbr/brazilian-ecommerce"
+chart = "results/charts/02_reviews_by_delivery.png"
+chart_commit = "7334b6cf8bd8ee73fc068f83b9eef86493c6d9da"
+chart_alt = "Bar chart of average review score by delivery lateness: 4.29 stars on time or early, 3.29 for 1–3 days late, 2.11 for 4–7 days late, and 1.70 for 8 or more days late."
+
+[[project]]
+slug = "fx-rates-pipeline"
+title = "FX Rates Pipeline"
+kind = "API data pipeline"
+finished = "2026-10-02"
+question = "How much does currency movement cost an Australian importer, and which budget-rate policy misses by less?"
+stat = "−43%"
+stat_label = "average monthly budget miss when the USD rate is re-forecast quarterly instead of yearly"
+finding = "A self-updating ETL pulls ECB rates from a public API into a validated SQLite store every business day via GitHub Actions, and five SQL queries build an FX-exposure report. On USD 100k a month of invoices, the mean monthly miss falls from 4,474 to 2,534 AUD (as of 2026-09-30)."
+so_what = "Finance teams can cut forecast error by re-forecasting the budget rate each quarter, using a rate history that maintains itself."
+stack = ["Python", "REST API", "SQLite", "SQL window functions", "GitHub Actions"]
+data = "European Central Bank rates via the Frankfurter API"
+data_url = "https://frankfurter.dev"
+chart = "results/charts/04_budget_policy.png"
+chart_commit = "087fb55698f8ef9ea9c8b1fa477f484a69592157"
+chart_alt = "Monthly bar chart from January 2024 of the absolute forecast miss on USD 100,000 of invoices, comparing an annual budget rate with a quarterly re-forecast. The quarterly bars are lower in most months of 2025 and 2026."
+
+[[project]]
+slug = "retail-data-cleaning-eda"
+title = "Retail Data Cleaning & EDA"
+kind = "Data cleaning + exploratory analysis"
+finished = "2026-09-28"
+question = "Can 540k messy retail transactions be cleaned into numbers finance and marketing can trust, and what do they show?"
+stat = "73.8%"
+stat_label = "of net revenue comes from the top 20% of identified customers"
+finding = "A logged, rule-by-rule cleaning pipeline records the rows and £ impact of every decision. The analysis finds strong Sep–Nov seasonality, 41.3% of pre-June customers lapsed (£725,721 lifetime revenue), and guest checkout hiding 14.7% of revenue from customer-level analysis."
+so_what = "Run a key-account programme for the top accounts, win back lapsed wholesalers before the autumn peak, and capture an email at checkout."
+stack = ["Python", "pandas", "data-quality audit", "matplotlib"]
+data = "UCI Online Retail (CC BY 4.0)"
+data_url = "https://archive.ics.uci.edu/dataset/352/online+retail"
+chart = "results/charts/05_customer_pareto.png"
+chart_commit = "b5412df88dd18fb911a669143af2eb97bbd89b61"
+chart_alt = "Pareto curve of cumulative net revenue against the share of identified customers ranked by spend. The top 20% of customers bring 74% of net revenue."
+
+[[project]]
+slug = "sql-business-analytics"
+title = "SQL Business Analytics"
+kind = "SQL analytics"
+finished = "2026-09-23"
+question = "Is a digital store growing, where does revenue come from, and which customers should it protect?"
+stat = "0"
+stat_label = "new customers acquired after 2010, so revenue has sat flat at about $450–480 a year"
+finding = "Eight business questions answered in documented SQL (KPIs, market concentration, catalogue, RFM segments, cohorts, sales reps, basket pairs). Retention is healthy at 72–85% of each cohort per year, 43% of the catalogue has never sold, and 14 at-risk high-value customers hold 25% of all revenue."
+so_what = "Growth has to come from acquisition, not retention spend, while the at-risk high-value customers get a targeted win-back."
+stack = ["SQL", "SQLite", "CTEs & window functions", "Python", "pandas"]
+data = "Chinook sample database (synthetic)"
+data_url = "https://github.com/lerocha/chinook-database"
+chart = "results/charts/cohort_retention.png"
+chart_commit = "673c03e4959b07fe264bacb866c4c0542ff47521"
+chart_alt = "Heatmap of cohort retention for the only two customer cohorts, 2009 and 2010: between 72% and 100% of each cohort still buys in each following year."

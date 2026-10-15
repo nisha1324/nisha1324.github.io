@@ -1,0 +1,178 @@
+{
+  "data-structures-in-practice": {
+    "archived": false,
+    "description": "Everyday data structures (hash maps, heaps, sweep lines, union-find) applied to 340k NYC 311 service requests, benchmarked against naive code, with the operational 'so what'",
+    "fork": false,
+    "html_url": "https://github.com/nisha1324/data-structures-in-practice",
+    "language": "Python",
+    "name": "data-structures-in-practice",
+    "private": false,
+    "pushed_at": "2026-10-14T15:43:52Z",
+    "topics": [
+      "311",
+      "algorithms",
+      "benchmarking",
+      "data-analysis",
+      "data-structures",
+      "hash-map",
+      "heap",
+      "nyc-open-data",
+      "operations-analytics",
+      "python",
+      "spatial-index",
+      "sweep-line",
+      "union-find"
+    ]
+  },
+  "ecommerce-funnel-duckdb": {
+    "archived": false,
+    "description": "DuckDB SQL case study on the Olist Brazilian e-commerce dataset: order funnel, delivery performance and customer KPIs",
+    "fork": false,
+    "html_url": "https://github.com/nisha1324/ecommerce-funnel-duckdb",
+    "language": "Python",
+    "name": "ecommerce-funnel-duckdb",
+    "private": false,
+    "pushed_at": "2026-10-04T15:48:57Z",
+    "topics": [
+      "business-analytics",
+      "cohort-analysis",
+      "data-analysis",
+      "duckdb",
+      "ecommerce",
+      "funnel-analysis",
+      "olist",
+      "python",
+      "sql"
+    ]
+  },
+  "fx-rates-pipeline": {
+    "archived": false,
+    "description": "Daily ETL pipeline: ECB exchange rates from the free Frankfurter API → validated SQLite store → FX cost-exposure report (Python, SQL, GitHub Actions)",
+    "fork": false,
+    "html_url": "https://github.com/nisha1324/fx-rates-pipeline",
+    "language": "Python",
+    "name": "fx-rates-pipeline",
+    "private": false,
+    "pushed_at": "2026-10-14T20:16:05Z",
+    "topics": [
+      "api",
+      "currency-risk",
+      "data-engineering",
+      "data-pipeline",
+      "etl",
+      "finance",
+      "github-actions",
+      "python",
+      "sql",
+      "sqlite"
+    ]
+  },
+  "llm-review-categoriser": {
+    "archived": false,
+    "description": "LLM-assisted categorisation of customer product reviews into business themes, with an offline baseline and analysis of what drives negative feedback",
+    "fork": false,
+    "html_url": "https://github.com/nisha1324/llm-review-categoriser",
+    "language": "Python",
+    "name": "llm-review-categoriser",
+    "private": false,
+    "pushed_at": "2026-10-08T15:40:27Z",
+    "topics": [
+      "anthropic",
+      "business-analytics",
+      "claude",
+      "customer-reviews",
+      "data-analysis",
+      "llm",
+      "nlp",
+      "pandas",
+      "python",
+      "text-classification"
+    ]
+  },
+  "retail-data-cleaning-eda": {
+    "archived": false,
+    "description": "Cleaning and exploring 540k messy real-world retail transactions (UCI Online Retail) with pandas: data-quality audit, cleaning pipeline, EDA and business insights",
+    "fork": false,
+    "html_url": "https://github.com/nisha1324/retail-data-cleaning-eda",
+    "language": "Python",
+    "name": "retail-data-cleaning-eda",
+    "private": false,
+    "pushed_at": "2026-09-28T03:42:50Z",
+    "topics": [
+      "customer-analytics",
+      "data-analysis",
+      "data-cleaning",
+      "eda",
+      "matplotlib",
+      "pandas",
+      "python",
+      "retail-analytics"
+    ]
+  },
+  "retail-kpi-dashboard": {
+    "archived": false,
+    "description": "Interactive Streamlit KPI dashboard (revenue, orders, AOV, customers, YoY) on UCI Online Retail II, 2009–2011",
+    "fork": false,
+    "html_url": "https://github.com/nisha1324/retail-kpi-dashboard",
+    "language": "Python",
+    "name": "retail-kpi-dashboard",
+    "private": false,
+    "pushed_at": "2026-10-06T15:39:23Z",
+    "topics": [
+      "business-intelligence",
+      "customer-retention",
+      "dashboard",
+      "data-analysis",
+      "kpi",
+      "pandas",
+      "python",
+      "retail-analytics",
+      "streamlit"
+    ]
+  },
+  "serverless-property-lake": {
+    "archived": false,
+    "description": "Serverless-style data lake (S3 + Lambda pattern) for HM Land Registry price-paid data, runnable offline with a moto S3 emulator: raw CSV → validated Parquet → SQL insights",
+    "fork": false,
+    "html_url": "https://github.com/nisha1324/serverless-property-lake",
+    "language": "Python",
+    "name": "serverless-property-lake",
+    "private": false,
+    "pushed_at": "2026-10-10T15:41:00Z",
+    "topics": [
+      "athena",
+      "aws",
+      "aws-lambda",
+      "data-engineering",
+      "data-lake",
+      "duckdb",
+      "etl",
+      "infrastructure-as-code",
+      "parquet",
+      "python",
+      "real-estate",
+      "s3",
+      "serverless"
+    ]
+  },
+  "sql-business-analytics": {
+    "archived": false,
+    "description": "SQL business analytics on a digital store: revenue KPIs, customer cohorts, retention, sales-rep performance (SQLite + Python)",
+    "fork": false,
+    "html_url": "https://github.com/nisha1324/sql-business-analytics",
+    "language": "Python",
+    "name": "sql-business-analytics",
+    "private": false,
+    "pushed_at": "2026-09-23T20:54:23Z",
+    "topics": [
+      "business-analytics",
+      "cohort-analysis",
+      "data-analysis",
+      "pandas",
+      "python",
+      "rfm-analysis",
+      "sql",
+      "sqlite"
+    ]
+  }
+}

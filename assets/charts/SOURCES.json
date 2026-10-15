@@ -1,0 +1,34 @@
+{
+  "data-structures-in-practice.png": {
+    "sha256": "14b6fbfaa95c093a6ab80bec6e9c52bbbc89375fee242a15a16f475d1af0b433",
+    "url": "https://raw.githubusercontent.com/nisha1324/data-structures-in-practice/789c86725d106f37b4035825205044e29b5d0c74/results/charts/01_repeat_share_by_type.png"
+  },
+  "ecommerce-funnel-duckdb.png": {
+    "sha256": "2a206f91f31f9f7a88a7efd5fef3ecae0321f0012072259563813a40f73889a3",
+    "url": "https://raw.githubusercontent.com/nisha1324/ecommerce-funnel-duckdb/7334b6cf8bd8ee73fc068f83b9eef86493c6d9da/results/charts/02_reviews_by_delivery.png"
+  },
+  "fx-rates-pipeline.png": {
+    "sha256": "31a184d1d616d374d3e041d5f28030124e34da37dd9f6058fff20e85635dbbad",
+    "url": "https://raw.githubusercontent.com/nisha1324/fx-rates-pipeline/087fb55698f8ef9ea9c8b1fa477f484a69592157/results/charts/04_budget_policy.png"
+  },
+  "llm-review-categoriser.png": {
+    "sha256": "9c13eeecba5b56797d0f04da78d813bff70148e17cfe84350233025f2410da09",
+    "url": "https://raw.githubusercontent.com/nisha1324/llm-review-categoriser/0a8d76f3dea202c6dd14d44451c773d94b30e65a/results/charts/subissues_baseline.png"
+  },
+  "retail-data-cleaning-eda.png": {
+    "sha256": "fa32620fc0766fc329086bdf98df83adcb4642feffc3cbb50e6d06cde5f22d89",
+    "url": "https://raw.githubusercontent.com/nisha1324/retail-data-cleaning-eda/b5412df88dd18fb911a669143af2eb97bbd89b61/results/charts/05_customer_pareto.png"
+  },
+  "retail-kpi-dashboard.png": {
+    "sha256": "ff46bc23b25aa2a614d349118437e114d6c96932b15f47c8f5a5eeaa46f8dba9",
+    "url": "https://raw.githubusercontent.com/nisha1324/retail-kpi-dashboard/25de61e01bff75d98e8b8f20da3e748514cec976/docs/customer_bridge_2011_vs_2010.png"
+  },
+  "serverless-property-lake.png": {
+    "sha256": "975e29d05b591c30ba7ddb6feaaae357f38d9bf5ac1857a559f236aae044b5a5",
+    "url": "https://raw.githubusercontent.com/nisha1324/serverless-property-lake/d7acad05dd5b26abfbb8bf6f4a22ff96be01191d/results/charts/01_registration_lag.png"
+  },
+  "sql-business-analytics.png": {
+    "sha256": "ec675949b4aa897932cf57f3b93ea839bfbaac79031c78acf26101115bdd15bc",
+    "url": "https://raw.githubusercontent.com/nisha1324/sql-business-analytics/673c03e4959b07fe264bacb866c4c0542ff47521/results/charts/cohort_retention.png"
+  }
+}
