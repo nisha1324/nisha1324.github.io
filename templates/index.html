@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>$name · Data & business analysis portfolio</title>
+<meta name="description" content="$intro">
+<meta property="og:title" content="$name · Data & business analysis portfolio">
+<meta property="og:description" content="$intro">
+<meta property="og:type" content="website">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#projects">Skip to projects</a>
+<header class="hero">
+  <div class="wrap">
+    <h1>$name</h1>
+    <p class="headline">$headline</p>
+    <p class="intro">$intro</p>
+    <ul class="contact">
+      <li><a href="$github">GitHub</a></li>
+      <li><a href="$linkedin">LinkedIn</a></li>
+      <li><a href="mailto:$email">Email</a></li>
+    </ul>
+  </div>
+</header>
+<main id="projects" class="wrap">
+  <nav aria-label="Projects">
+    <h2 class="nav-title">$count projects, newest first</h2>
+    <ul class="nav-list">$nav</ul>
+  </nav>
+  $cards
+</main>
+<footer class="wrap">
+  <p>Every figure on this page is copied from the project's own README, and each chart comes from its repo at a pinned commit.
+  The page is built by a small Python script and deployed with GitHub Actions
+  (<a href="https://github.com/nisha1324/nisha1324.github.io">source</a>).</p>
+</footer>
+</body>
+</html>
