@@ -11,6 +11,8 @@ intro = "I work at the intersection of business and information systems. Each pr
 github = "https://github.com/nisha1324"
 linkedin = "https://linkedin.com/in/nishashashi"
 email = "nisha.shashi.514@gmail.com"
+url = "https://nisha1324.github.io/"
+og_headline = "Business analysis · Data analysis · Applied AI"
 
 [[project]]
 slug = "data-structures-in-practice"

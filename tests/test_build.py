@@ -69,6 +69,37 @@ def test_real_inputs_build(workspace):
     assert (out / ".nojekyll").exists()
 
 
+def test_link_preview_tags(workspace):
+    out = build.build(workspace, workspace / "_site")
+    html = (out / "index.html").read_text()
+    url = tomllib.loads((workspace / "projects.toml").read_text())["site"]["url"]
+    assert url.endswith("/")
+    assert f'<meta property="og:image" content="{url}og.png">' in html
+    assert f'<link rel="canonical" href="{url}">' in html
+    assert build.png_size(out / "og.png") == (1200, 630)
+
+
+def test_wrong_size_preview_fails(workspace):
+    shutil.copy2(workspace / "assets" / "charts" / "ecommerce-funnel-duckdb.png",
+                 workspace / "static" / "og.png")
+    with pytest.raises(build.BuildError, match="1200x630"):
+        build.build(workspace, workspace / "_site")
+
+
+def test_internal_links_resolve(workspace):
+    import sys
+    sys.path.insert(0, str(ROOT / "scripts"))
+    import check_links
+
+    out = build.build(workspace, workspace / "_site")
+    page = check_links.Links()
+    page.feed((out / "index.html").read_text())
+    internal = [u for u in page.urls if not u.startswith(("http://", "https://"))]
+    assert internal, "expected anchors and chart links"
+    assert [u for u in internal if check_links.check_internal(u, page.ids, out)] == []
+    assert check_links.check_internal("#nope", page.ids, out)  # and it does catch breaks
+
+
 def test_build_is_deterministic(workspace):
     first = (build.build(workspace, workspace / "a") / "index.html").read_bytes()
     second = (build.build(workspace, workspace / "b") / "index.html").read_bytes()

@@ -4,7 +4,8 @@ Inputs (all committed, so the build is offline and deterministic):
   projects.toml            curated text for each project, figures copied from its README
   assets/charts/*.png      each project's key chart (scripts/fetch_charts.py)
   data/repos.json          repo metadata from the GitHub API (scripts/sync_github.py)
-  templates/, static/      page template and stylesheet
+  templates/, static/      page template, stylesheet and link preview image
+                           (static/og.png, from scripts/make_og_image.py)
 
 The build stops with an error instead of publishing something wrong: a missing
 field, a chart whose bytes don't match SOURCES.json, or a repo that is missing,
@@ -28,7 +29,7 @@ from string import Template
 ROOT = Path(__file__).resolve().parent
 OUT = ROOT / "_site"
 
-SITE_FIELDS = ("name", "headline", "intro", "github", "linkedin", "email")
+SITE_FIELDS = ("name", "headline", "intro", "github", "linkedin", "email", "url")
 PROJECT_FIELDS = ("slug", "title", "kind", "finished", "question", "stat", "stat_label",
                   "finding", "so_what", "stack", "data", "data_url", "chart",
                   "chart_commit", "chart_alt")
@@ -136,6 +137,7 @@ def render_page(site: dict, projects: list[dict], repos: dict, chart_dir: Path,
         github=e(site["github"]),
         linkedin=e(site["linkedin"]),
         email=e(site["email"]),
+        url=e(site["url"]),
         count=len(projects),
         nav=nav,
         cards=cards,
@@ -148,6 +150,8 @@ def build(root: Path = ROOT, out: Path = OUT) -> Path:
     repos = json.loads((root / "data" / "repos.json").read_text())
     check_charts(projects, chart_dir)
     check_repos(projects, repos)
+    if png_size(root / "static" / "og.png") != (1200, 630):
+        raise BuildError("static/og.png must be 1200x630: run scripts/make_og_image.py")
     html = render_page(site, projects, repos, chart_dir,
                        (root / "templates" / "index.html").read_text())
 
@@ -156,6 +160,7 @@ def build(root: Path = ROOT, out: Path = OUT) -> Path:
     (out / "assets" / "charts").mkdir(parents=True)
     (out / "index.html").write_text(html)
     shutil.copy2(root / "static" / "style.css", out / "style.css")
+    shutil.copy2(root / "static" / "og.png", out / "og.png")  # link preview image
     for p in projects:
         shutil.copy2(chart_dir / f"{p['slug']}.png", out / "assets" / "charts")
     (out / ".nojekyll").write_text("")  # serve files as-is, no Jekyll pass
