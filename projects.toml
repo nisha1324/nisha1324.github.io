@@ -15,6 +15,23 @@ url = "https://nisha1324.github.io/"
 og_headline = "Business analysis · Data analysis · Applied AI"
 
 [[project]]
+slug = "marketing-lead-funnel"
+title = "Marketing Lead Funnel Analysis"
+kind = "Marketing & sales funnel analysis"
+finished = "2026-10-18"
+question = "Which marketing channels bring a marketplace sellers who sign and then actually sell, and why did conversion fall in May 2018?"
+stat = "43.1%"
+stat_label = "of signed sellers made a sale within 90 days of signing"
+finding = "DuckDB SQL over 8,000 Olist leads, joined to ~99k marketplace orders: 11.3% of Jan–May 2018 leads signed within 90 days, so roughly 49 in 1,000 leads became a selling seller. Paid and organic search sign leads at the same rate, but paid-search sellers start selling more often (55.0% vs 39.1%). May's fall (12.1% → 8.4%) came from weaker conversion within channels, not a worse lead mix."
+so_what = "Measure the funnel to the first sale, not the signature: check every seller with no sale by day 30, and give manufacturers and offline businesses, who sign but rarely sell, an onboarding path."
+stack = ["SQL", "DuckDB", "Python", "Wilson intervals", "shift-share analysis"]
+data = "Olist Marketing Funnel + Brazilian E-commerce (CC BY-NC-SA 4.0)"
+data_url = "https://www.kaggle.com/datasets/olistbr/marketing-funnel-olist"
+chart = "results/charts/08_time_to_first_sale.png"
+chart_commit = "87e74f0a67a1938931f5636c6cefb4e698a0e862"
+chart_alt = "Bar chart of the share of 643 signed sellers with a first sale, by days after the deal: 2.0% by day 7, 6.4% by day 14, 16.8% by day 30, 24.7% by day 45, 31.7% by day 60 and 43.1% by day 90. 48.4% had no sale by 2018-08-21."
+
+[[project]]
 slug = "data-structures-in-practice"
 title = "Data Structures in Practice"
 kind = "Algorithms for operations data"

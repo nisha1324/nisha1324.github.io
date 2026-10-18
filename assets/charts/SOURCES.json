@@ -15,6 +15,10 @@
     "sha256": "9c13eeecba5b56797d0f04da78d813bff70148e17cfe84350233025f2410da09",
     "url": "https://raw.githubusercontent.com/nisha1324/llm-review-categoriser/0a8d76f3dea202c6dd14d44451c773d94b30e65a/results/charts/subissues_baseline.png"
   },
+  "marketing-lead-funnel.png": {
+    "sha256": "ec2c5dfcb44ef16028a665c8a65c3d48867e046894973c93948f2e00e8d31f89",
+    "url": "https://raw.githubusercontent.com/nisha1324/marketing-lead-funnel/87e74f0a67a1938931f5636c6cefb4e698a0e862/results/charts/08_time_to_first_sale.png"
+  },
   "retail-data-cleaning-eda.png": {
     "sha256": "fa32620fc0766fc329086bdf98df83adcb4642feffc3cbb50e6d06cde5f22d89",
     "url": "https://raw.githubusercontent.com/nisha1324/retail-data-cleaning-eda/b5412df88dd18fb911a669143af2eb97bbd89b61/results/charts/05_customer_pareto.png"

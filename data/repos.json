@@ -53,7 +53,7 @@
     "language": "Python",
     "name": "fx-rates-pipeline",
     "private": false,
-    "pushed_at": "2026-10-14T20:16:05Z",
+    "pushed_at": "2026-10-16T19:37:13Z",
     "topics": [
       "api",
       "currency-risk",
@@ -87,6 +87,28 @@
       "pandas",
       "python",
       "text-classification"
+    ]
+  },
+  "marketing-lead-funnel": {
+    "archived": false,
+    "description": "Marketing lead-funnel analysis of 8,000 Olist leads in DuckDB SQL: channel and landing-page conversion, the May 2018 drop, and whether signed sellers actually start selling",
+    "fork": false,
+    "html_url": "https://github.com/nisha1324/marketing-lead-funnel",
+    "language": "Python",
+    "name": "marketing-lead-funnel",
+    "private": false,
+    "pushed_at": "2026-10-18T15:35:46Z",
+    "topics": [
+      "business-analytics",
+      "data-analysis",
+      "duckdb",
+      "funnel-analysis",
+      "lead-generation",
+      "marketing-analytics",
+      "olist",
+      "python",
+      "sales-analytics",
+      "sql"
     ]
   },
   "retail-data-cleaning-eda": {
