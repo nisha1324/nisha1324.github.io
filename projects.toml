@@ -15,6 +15,23 @@ url = "https://nisha1324.github.io/"
 og_headline = "Business analysis · Data analysis · Applied AI"
 
 [[project]]
+slug = "data-quality-pipeline-duckdb"
+title = "Data-Quality Pipeline on DuckDB"
+kind = "Data-quality testing & pipelines"
+finished = "2026-10-21"
+question = "Which foot-traffic reports built on Melbourne's live pedestrian-sensor feed can the business trust today, and which need a caveat or shouldn't be used?"
+stat = "3 of 7"
+stat_label = "common foot-traffic reports shouldn't be used as usually built (snapshot 2026-10-18)"
+finding = "dbt-style checks written from scratch (YAML compiled to SQL on DuckDB) find that 8.30% of rows share their id with another sensor and 5.67% of sensor-hours are missing, 43.0% of them likely zeros the feed doesn't publish. Year-on-year growth is +3.8% on the published totals but +6.2% like-for-like. A daily GitHub Actions gate reruns everything and goes red only on errors nobody has reviewed."
+so_what = "Show the last complete day instead of 'yesterday', compare periods like-for-like with a coverage column, and join on sensor and date, never the published id."
+stack = ["SQL", "DuckDB", "Python", "YAML data tests", "GitHub Actions"]
+data = "City of Melbourne Pedestrian Counting System (CC BY 4.0)"
+data_url = "https://data.melbourne.vic.gov.au/explore/dataset/pedestrian-counting-system-monthly-counts-per-hour/information/"
+chart = "results/charts/03_monthly_undercount.png"
+chart_commit = "f791449aa12c173fcf32fa501a8969960df3cc99"
+chart_alt = "Bar chart of the estimated share of pedestrians missing from each month's city-wide total because of sensor outages, October 2024 to October 2026. Most months are 0.20–1.51% short; November 2025 to June 2026 are 2.58–4.06% short, while Bourke Street Mall (North) was dark."
+
+[[project]]
 slug = "marketing-lead-funnel"
 title = "Marketing Lead Funnel Analysis"
 kind = "Marketing & sales funnel analysis"

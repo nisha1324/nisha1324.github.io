@@ -1,4 +1,8 @@
 {
+  "data-quality-pipeline-duckdb.png": {
+    "sha256": "f0b8319afc14c79b9969641153e5ae1c657e4dcfa2133a6c236a956dc65b6bef",
+    "url": "https://raw.githubusercontent.com/nisha1324/data-quality-pipeline-duckdb/f791449aa12c173fcf32fa501a8969960df3cc99/results/charts/03_monthly_undercount.png"
+  },
   "data-structures-in-practice.png": {
     "sha256": "14b6fbfaa95c093a6ab80bec6e9c52bbbc89375fee242a15a16f475d1af0b433",
     "url": "https://raw.githubusercontent.com/nisha1324/data-structures-in-practice/789c86725d106f37b4035825205044e29b5d0c74/results/charts/01_repeat_share_by_type.png"

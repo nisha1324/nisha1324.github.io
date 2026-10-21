@@ -1,4 +1,27 @@
 {
+  "data-quality-pipeline-duckdb": {
+    "archived": false,
+    "description": "Data-quality test pipeline on DuckDB: YAML-defined checks (keys, integrity, freshness, completeness) on City of Melbourne pedestrian sensor data, answering which foot-traffic reports can be trusted today",
+    "fork": false,
+    "html_url": "https://github.com/nisha1324/data-quality-pipeline-duckdb",
+    "language": "Python",
+    "name": "data-quality-pipeline-duckdb",
+    "private": false,
+    "pushed_at": "2026-10-21T15:54:44Z",
+    "topics": [
+      "data-analysis",
+      "data-engineering",
+      "data-pipeline",
+      "data-quality",
+      "data-testing",
+      "duckdb",
+      "github-actions",
+      "melbourne",
+      "open-data",
+      "python",
+      "sql"
+    ]
+  },
   "data-structures-in-practice": {
     "archived": false,
     "description": "Everyday data structures (hash maps, heaps, sweep lines, union-find) applied to 340k NYC 311 service requests, benchmarked against naive code, with the operational 'so what'",
@@ -53,7 +76,7 @@
     "language": "Python",
     "name": "fx-rates-pipeline",
     "private": false,
-    "pushed_at": "2026-10-16T19:37:13Z",
+    "pushed_at": "2026-10-20T20:03:17Z",
     "topics": [
       "api",
       "currency-risk",

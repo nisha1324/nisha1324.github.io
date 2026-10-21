@@ -27,14 +27,14 @@ W, H = 1200, 630
 CARD = """<!doctype html><html><head><meta charset="utf-8"><style>
 html, body {{ margin: 0; width: {w}px; height: {h}px; overflow: hidden; }}
 body {{ background: #fcfcfb; color: #0b0b0b; box-sizing: border-box;
-       font-family: system-ui, "DejaVu Sans", sans-serif; padding: 64px 72px;
+       font-family: system-ui, "DejaVu Sans", sans-serif; padding: 52px 72px 48px;
        border-top: 14px solid #1f5fae; display: flex; flex-direction: column; }}
 h1 {{ font-size: 76px; margin: 0; line-height: 1.05; }}
-.headline {{ font-size: 30px; color: #52514e; margin: 14px 0 40px; font-weight: 600; }}
+.headline {{ font-size: 30px; color: #52514e; margin: 12px 0 30px; font-weight: 600; }}
 .count {{ font-size: 24px; text-transform: uppercase; letter-spacing: .06em; color: #52514e; margin: 0 0 14px; }}
-ul {{ list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 12px; }}
-li {{ font-size: 25px; padding: 7px 18px; border-radius: 999px; background: #f2f1ed; }}
-.url {{ margin: auto 0 0; font-size: 28px; font-weight: 700; color: #1f5fae; }}
+ul {{ list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; }}
+li {{ font-size: 24px; padding: 6px 16px; border-radius: 999px; background: #f2f1ed; }}
+.url {{ margin: auto 0 0; padding-top: 22px; font-size: 28px; font-weight: 700; color: #1f5fae; }}
 </style></head><body>
 <h1>{name}</h1>
 <p class="headline">{headline}</p>
