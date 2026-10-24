@@ -55,7 +55,7 @@
     "language": "Python",
     "name": "ecommerce-funnel-duckdb",
     "private": false,
-    "pushed_at": "2026-10-04T15:48:57Z",
+    "pushed_at": "2026-10-22T03:44:05Z",
     "topics": [
       "business-analytics",
       "cohort-analysis",
@@ -76,7 +76,7 @@
     "language": "Python",
     "name": "fx-rates-pipeline",
     "private": false,
-    "pushed_at": "2026-10-20T20:03:17Z",
+    "pushed_at": "2026-10-23T19:59:53Z",
     "topics": [
       "api",
       "currency-risk",
@@ -110,6 +110,29 @@
       "pandas",
       "python",
       "text-classification"
+    ]
+  },
+  "llm-sql-report-helper": {
+    "archived": false,
+    "description": "Ask a business question in plain English, get guarded SQL, the result and a short report. LLM backend plus offline path, evaluated on gold SQL (Chinook).",
+    "fork": false,
+    "html_url": "https://github.com/nisha1324/llm-sql-report-helper",
+    "language": "Python",
+    "name": "llm-sql-report-helper",
+    "private": false,
+    "pushed_at": "2026-10-24T03:47:17Z",
+    "topics": [
+      "business-intelligence",
+      "claude-api",
+      "data-analysis",
+      "data-governance",
+      "evaluation",
+      "llm",
+      "python",
+      "semantic-layer",
+      "sql",
+      "sqlite",
+      "text-to-sql"
     ]
   },
   "marketing-lead-funnel": {
@@ -183,7 +206,7 @@
     "language": "Python",
     "name": "serverless-property-lake",
     "private": false,
-    "pushed_at": "2026-10-10T15:41:00Z",
+    "pushed_at": "2026-10-22T03:44:02Z",
     "topics": [
       "athena",
       "aws",

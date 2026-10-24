@@ -19,6 +19,10 @@
     "sha256": "9c13eeecba5b56797d0f04da78d813bff70148e17cfe84350233025f2410da09",
     "url": "https://raw.githubusercontent.com/nisha1324/llm-review-categoriser/0a8d76f3dea202c6dd14d44451c773d94b30e65a/results/charts/subissues_baseline.png"
   },
+  "llm-sql-report-helper.png": {
+    "sha256": "a515eb999fea6fa81f3f993e5f508fc4ea52111f7ed75c2a95e52582574d7ebb",
+    "url": "https://raw.githubusercontent.com/nisha1324/llm-sql-report-helper/c1601f011b446013339f3f63c5e24a7bc8370443/results/charts/eval_offline.png"
+  },
   "marketing-lead-funnel.png": {
     "sha256": "ec2c5dfcb44ef16028a665c8a65c3d48867e046894973c93948f2e00e8d31f89",
     "url": "https://raw.githubusercontent.com/nisha1324/marketing-lead-funnel/87e74f0a67a1938931f5636c6cefb4e698a0e862/results/charts/08_time_to_first_sale.png"

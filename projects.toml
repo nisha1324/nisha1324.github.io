@@ -15,6 +15,23 @@ url = "https://nisha1324.github.io/"
 og_headline = "Business analysis · Data analysis · Applied AI"
 
 [[project]]
+slug = "llm-sql-report-helper"
+title = "LLM SQL Report Helper"
+kind = "Applied AI & governed self-service analytics"
+finished = "2026-10-24"
+question = "Can managers safely ask a database business questions in plain English, and how would we know whether the answers are right?"
+stat = "38%"
+stat_label = "of the offline path's numbers were right on reworded questions, against 90% on the wording it was built from"
+finding = "Plain-English questions become guarded SQL and a short report. Personal data and writes are blocked inside SQLite, so the guard rejects all 5 naive privacy and write queries however the model behaves. Any backend is scored on 32 questions with gold answers plus the same questions reworded: the offline semantic layer gets 59% right on its own wording and 19% reworded. A number check on the summaries refused 788 of 788 planted changes to money and percentage figures. The Claude backend is built and tested, and its score is pending an API key."
+so_what = "Enforce data access in the database rather than the prompt, gate every model or prompt change on a held-out score, and always show the result table under a generated summary."
+stack = ["SQL", "SQLite", "Python", "Claude API", "LLM evaluation"]
+data = "Chinook sample database (MIT-style licence)"
+data_url = "https://github.com/lerocha/chinook-database"
+chart = "results/charts/eval_offline.png"
+chart_commit = "c1601f011b446013339f3f63c5e24a7bc8370443"
+chart_alt = "Stacked bar chart of the offline path's answers to 32 business questions, asked in the wording it was built from and reworded. Overall: 19 right, 2 wrong and 11 with no answer on its own wording; 6 right, 10 wrong and 16 with no answer reworded. By level, easy goes from 7 of 8 to 4 of 8 right, medium from 10 of 15 to 2 of 15, and hard from 2 of 9 to 0 of 9."
+
+[[project]]
 slug = "data-quality-pipeline-duckdb"
 title = "Data-Quality Pipeline on DuckDB"
 kind = "Data-quality testing & pipelines"
