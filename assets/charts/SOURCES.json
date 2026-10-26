@@ -42,5 +42,9 @@
   "sql-business-analytics.png": {
     "sha256": "ec675949b4aa897932cf57f3b93ea839bfbaac79031c78acf26101115bdd15bc",
     "url": "https://raw.githubusercontent.com/nisha1324/sql-business-analytics/673c03e4959b07fe264bacb866c4c0542ff47521/results/charts/cohort_retention.png"
+  },
+  "vic-rental-market-analysis.png": {
+    "sha256": "e2871d926e45657a98ac533957dab73d7fdab46c6d1b741cd06655b09509d394",
+    "url": "https://raw.githubusercontent.com/nisha1324/vic-rental-market-analysis/a1aa7f616c92614ccc1eff9ceb25df4eddb47899/results/charts/rent_growth_vs_affordability.png"
   }
 }

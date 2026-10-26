@@ -242,5 +242,29 @@
       "sql",
       "sqlite"
     ]
+  },
+  "vic-rental-market-analysis": {
+    "archived": false,
+    "description": "Where are Victorian rents rising fastest, and who can still afford to rent? Homes Victoria Rental Report + ABS data, 2000–2025: DuckDB SQL, pandas, tested audit, business recommendations.",
+    "fork": false,
+    "html_url": "https://github.com/nisha1324/vic-rental-market-analysis",
+    "language": "Python",
+    "name": "vic-rental-market-analysis",
+    "private": false,
+    "pushed_at": "2026-10-26T15:40:44Z",
+    "topics": [
+      "australia",
+      "business-analysis",
+      "data-analysis",
+      "duckdb",
+      "housing",
+      "open-data",
+      "pandas",
+      "python",
+      "real-estate",
+      "rental-market",
+      "sql",
+      "victoria"
+    ]
   }
 }

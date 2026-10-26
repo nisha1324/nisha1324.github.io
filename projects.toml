@@ -15,6 +15,23 @@ url = "https://nisha1324.github.io/"
 og_headline = "Business analysis · Data analysis · Applied AI"
 
 [[project]]
+slug = "vic-rental-market-analysis"
+title = "Victorian Rental Market Analysis"
+kind = "Housing market & affordability analysis"
+finished = "2026-10-26"
+question = "Where are rents in Victoria rising fastest, who can still afford to rent, and how has that changed since before COVID?"
+stat = "36.4%"
+stat_label = "of new leases in regional Victoria were affordable to a lower-income household in Sep 2025, down from 46.8% in Sep 2019"
+finding = "DuckDB SQL over 25 years of Homes Victoria rental-bond data, joined to ABS inflation, building approvals and Census dwellings, after an audit that reconciles the parsed tables with the published report. The median new lease rose from $400 to $550 a week since Sep 2019 (+11.5% after inflation), but fell 0.7% in real terms in the last year. Regional Victoria rose 46.9% against Melbourne's 36.9%, and affordability clearly fell in 13 of 20 well-sampled regional LGAs against 4 of 31 in Melbourne. Where more homes were built, rents rose less (median 36.5% against 47.5%)."
+so_what = "Aim rent support and social housing at regional cities and single-parent households first, keep the growth corridors building, and budget 2026 rent reviews on flat real rents."
+stack = ["SQL", "DuckDB", "Python", "pandas", "ABS Data API"]
+data = "Homes Victoria Rental Report – Quarterly; ABS CPI, Building Approvals and Census 2021 (all CC BY 4.0)"
+data_url = "https://discover.data.vic.gov.au/dataset/rental-report-quarterly-moving-annual-rents-by-suburb"
+chart = "results/charts/rent_growth_vs_affordability.png"
+chart_commit = "a1aa7f616c92614ccc1eff9ceb25df4eddb47899"
+chart_alt = "Scatter chart with one dot per Victorian LGA: change in the median weekly rent of new leases from Sep 2019 to Sep 2025 against the change in the share of new leases affordable to a lower-income household. Where rents rose about 30%, as in Mitchell, Ballarat, Melton and Wyndham, the affordable share rose by 14 to 29 points. Where rents rose 61 to 70%, in the regional LGAs of Latrobe, Greater Shepparton, Wodonga and Moira, it fell by 27 to 42 points."
+
+[[project]]
 slug = "llm-sql-report-helper"
 title = "LLM SQL Report Helper"
 kind = "Applied AI & governed self-service analytics"
