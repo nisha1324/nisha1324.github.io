@@ -15,6 +15,23 @@ url = "https://nisha1324.github.io/"
 og_headline = "Business analysis · Data analysis · Applied AI"
 
 [[project]]
+slug = "airline-ontime-dbt-warehouse"
+title = "Airline On-Time Warehouse"
+kind = "Data warehouse & BI model (dbt + DuckDB)"
+finished = "2026-10-29"
+question = "Which Australian airlines and routes actually run on time, has punctuality recovered since COVID, and what should a corporate travel team book?"
+stat = "29.1 pts"
+stat_label = "gap in on-time arrivals between Qantas (88.4%) and Jetstar (59.3%) on the same route, Brisbane–Melbourne, in the 12 months to Sep 2026"
+finding = "A tested star-schema warehouse built with dbt-core on DuckDB from BITRE's monthly on-time data since 2004. The raw file stacks four grains in one table, so a naive sum overstates national flights 3.51×; the warehouse splits it into two facts at their own grain, guarded by 166 dbt tests and 55 pytest tests and rerun by GitHub Actions on every push. 77.9% of flights arrived on time in the latest 12 months, against 79.4% in FY2018-19. On the 5 busiest city pairs, airlines on the same route are 4.9 to 29.1 points apart, while the routes themselves are within 3.2 points. A Power BI model with 31 DAX measures and check queries carries the same rules."
+so_what = "Pick the preferred airline route by route rather than network-wide, budget for lateness on the worst routes, keep cancellation-prone routes like Canberra–Sydney off the last flight of the day, and report from the warehouse, never the raw file."
+stack = ["SQL", "dbt-core", "DuckDB", "Python", "Power BI / DAX", "GitHub Actions"]
+data = "BITRE Domestic Airlines – On Time Performance, data.gov.au (CC BY 3.0 AU)"
+data_url = "https://data.gov.au/data/dataset/domestic-airline-on-time-performance"
+chart = "results/charts/same_route_airlines.png"
+chart_commit = "2256c01681cc28fb787a9d085c76fc55fbaad6c4"
+chart_alt = "Dot chart of on-time arrivals by airline over the 12 months to Sep 2026 on the five busiest city pairs. On Brisbane–Melbourne, Qantas ran 88.4% on time, Virgin Australia 72.1% and Jetstar 59.3%. On Melbourne–Sydney the spread is narrower: Qantas 76.0%, Virgin Australia 73.6%, Jetstar 69.5%. On Gold Coast–Sydney, Jetstar (78.5%) beat Virgin Australia (73.6%)."
+
+[[project]]
 slug = "vic-rental-market-analysis"
 title = "Victorian Rental Market Analysis"
 kind = "Housing market & affordability analysis"

@@ -1,4 +1,32 @@
 {
+  "airline-ontime-dbt-warehouse": {
+    "archived": false,
+    "description": "Star-schema warehouse (dbt-core + DuckDB) for Australian domestic airline on-time performance, BITRE open data",
+    "fork": false,
+    "html_url": "https://github.com/nisha1324/airline-ontime-dbt-warehouse",
+    "language": "Python",
+    "name": "airline-ontime-dbt-warehouse",
+    "private": false,
+    "pushed_at": "2026-10-29T03:56:25Z",
+    "topics": [
+      "airlines",
+      "analytics-engineering",
+      "australia",
+      "aviation",
+      "data-modeling",
+      "data-warehouse",
+      "dax",
+      "dbt",
+      "dbt-core",
+      "duckdb",
+      "github-actions",
+      "open-data",
+      "power-bi",
+      "python",
+      "sql",
+      "star-schema"
+    ]
+  },
   "data-quality-pipeline-duckdb": {
     "archived": false,
     "description": "Data-quality test pipeline on DuckDB: YAML-defined checks (keys, integrity, freshness, completeness) on City of Melbourne pedestrian sensor data, answering which foot-traffic reports can be trusted today",
@@ -76,7 +104,7 @@
     "language": "Python",
     "name": "fx-rates-pipeline",
     "private": false,
-    "pushed_at": "2026-10-23T19:59:53Z",
+    "pushed_at": "2026-10-28T21:12:52Z",
     "topics": [
       "api",
       "currency-risk",
