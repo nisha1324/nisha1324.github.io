@@ -31,6 +31,10 @@
     "sha256": "ec2c5dfcb44ef16028a665c8a65c3d48867e046894973c93948f2e00e8d31f89",
     "url": "https://raw.githubusercontent.com/nisha1324/marketing-lead-funnel/87e74f0a67a1938931f5636c6cefb4e698a0e862/results/charts/08_time_to_first_sale.png"
   },
+  "nem-demand-forecasting.png": {
+    "sha256": "85d5dd6099bc49a5b3bd2f181f9ebc01f3ef5aba4bd4240ff48ada8abf7ff9c6",
+    "url": "https://raw.githubusercontent.com/nisha1324/nem-demand-forecasting/17b189dc58b3722ee7873d08b895cdcf53d61217/results/charts/buffer_promise_kept.png"
+  },
   "retail-data-cleaning-eda.png": {
     "sha256": "fa32620fc0766fc329086bdf98df83adcb4642feffc3cbb50e6d06cde5f22d89",
     "url": "https://raw.githubusercontent.com/nisha1324/retail-data-cleaning-eda/b5412df88dd18fb911a669143af2eb97bbd89b61/results/charts/05_customer_pareto.png"

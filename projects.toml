@@ -15,6 +15,23 @@ url = "https://nisha1324.github.io/"
 og_headline = "Business analysis · Data analysis · Applied AI"
 
 [[project]]
+slug = "nem-demand-forecasting"
+title = "NEM Demand Forecasting"
+kind = "Forecasting for operations planning"
+finished = "2026-11-01"
+question = "How well can methods a planner can explain predict tomorrow's electricity demand, and how much buffer should they hold for the error that's left?"
+stat = "66%"
+stat_label = "of days were fully covered by a \"95%\" buffer built the usual way, on half-hours. Sizing on each day's worst half-hour and shaping it by time of day covered 94.2%"
+finding = "A rolling backtest of half-hourly demand across Australia's 5 NEM regions, on AEMO data from Jan 2019 to Sep 2026, rerun by GitHub Actions on every push. Tuned on one year and scored on a held-out year (Oct 2025 – Sep 2026), a blend of smoothed recent demand and a corrected 3-year average, plus a small adjustment for forecast heat, cold and sun, reaches 3.3-8.5% day-ahead error. That's 22-45% below each region's best simple baseline and 36-55% below the usual \"same day last week\". The shaped buffer uses 3-21% less cover than a flat one, though it covered 88.6% of summer days against 97.6% of winter ones. Weather takes 8-69% off the spot cost of forecast error, yet a fixed timetable timed a battery as well or better in 4 of 5 regions."
+so_what = "Replace \"same day last week\" with the blend and a weather forecast, sun included. Size buffers on each day's worst half-hour, add cover in summer, match the hedge to the region, and keep a battery on a timetable until a price forecast beats it."
+stack = ["Python", "pandas", "NumPy", "DuckDB", "SQL", "GitHub Actions"]
+data = "AEMO Aggregated price and demand data (any use, with attribution); ECMWF forecasts via Open-Meteo (CC BY 4.0)"
+data_url = "https://aemo.com.au/energy-systems/electricity/national-electricity-market-nem/data-nem/aggregated-data"
+chart = "results/charts/buffer_promise_kept.png"
+chart_commit = "17b189dc58b3722ee7873d08b895cdcf53d61217"
+chart_alt = "Dot chart of the share of whole days covered from Oct 2025 to Sep 2026 by day-ahead buffers with a 95% promise, for 5 regions, guarding against under-forecasts and over-forecasts. A half-hour percentile covered 53% to 73% of days. Buffers sized on each day's worst half-hour, flat or shaped by time of day, sit between about 91% and 96%, close to the 95% line."
+
+[[project]]
 slug = "airline-ontime-dbt-warehouse"
 title = "Airline On-Time Warehouse"
 kind = "Data warehouse & BI model (dbt + DuckDB)"

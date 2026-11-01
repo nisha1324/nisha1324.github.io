@@ -104,7 +104,7 @@
     "language": "Python",
     "name": "fx-rates-pipeline",
     "private": false,
-    "pushed_at": "2026-10-28T21:12:52Z",
+    "pushed_at": "2026-10-30T20:56:21Z",
     "topics": [
       "api",
       "currency-risk",
@@ -183,6 +183,32 @@
       "python",
       "sales-analytics",
       "sql"
+    ]
+  },
+  "nem-demand-forecasting": {
+    "archived": false,
+    "description": "Explainable half-hourly electricity demand forecasts for Australia's 5 NEM regions on AEMO data: backtests, weather, tested MW buffers and a battery timing check",
+    "fork": false,
+    "html_url": "https://github.com/nisha1324/nem-demand-forecasting",
+    "language": "Python",
+    "name": "nem-demand-forecasting",
+    "private": false,
+    "pushed_at": "2026-11-01T03:56:01Z",
+    "topics": [
+      "aemo",
+      "australia",
+      "backtesting",
+      "business-analysis",
+      "data-analysis",
+      "duckdb",
+      "electricity-demand",
+      "energy",
+      "forecasting",
+      "github-actions",
+      "open-data",
+      "pandas",
+      "python",
+      "time-series"
     ]
   },
   "retail-data-cleaning-eda": {
