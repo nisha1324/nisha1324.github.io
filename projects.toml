@@ -15,6 +15,23 @@ url = "https://nisha1324.github.io/"
 og_headline = "Business analysis · Data analysis · Applied AI"
 
 [[project]]
+slug = "purchase-to-pay-process-mining"
+title = "Purchase-to-Pay Process Mining"
+kind = "Process mining & audit analytics"
+finished = "2026-11-03"
+question = "In a real purchase-to-pay process, are invoices cleared only after the right checks, where do items actually wait, and what work is redone or worth automating?"
+stat = "5.0%"
+stat_label = "of the mean 83.0 days from purchase order to first clearing is process overrun. 61.6% is the vendor's implied payment term and 17.1% is waiting for a payment run"
+finding = "Process mining in DuckDB SQL and Python on the BPI Challenge 2019 log: 1.6 million events on 251,734 purchase items at a coatings multinational based in the Netherlands, with every report rerun by GitHub Actions on each push. Seven plausible readings of the log turn out to be wrong: summing its value field, for one, overstates it 28.6 times. 10 of 21 compliance rules had no failures, and a plain count of invoices \"cleared with no goods\" is about 8 times too high until reversed invoices are taken out. Payment blocks are behind 61.7% of overrun days, and 48.4% of blocks have no reason visible in the log. A PO price changed after the invoice affects 1,860 items holding 14.6% of value: 92.2% of those that can be timed were blocked, and they cleared 4.0 days later than comparable items."
+so_what = "Don't send a team to fix invoice-to-clearing time: most of it is agreed terms and the payment-run calendar, which is a treasury decision. Fix PO prices before the invoice arrives, record a reason for every payment block, bring in e-invoicing, and ask finance whether the groups that rarely clear are settled outside this system."
+stack = ["SQL", "DuckDB", "Python", "pandas", "Process mining", "GitHub Actions"]
+data = "BPI Challenge 2019, 4TU.ResearchData (CC BY 4.0)"
+data_url = "https://doi.org/10.4121/uuid:d06aff4b-79f0-45e6-8ec8-e19730c248f1"
+chart = "results/charts/09_where_the_days_go.png"
+chart_commit = "c2d74a3cb40ceeaf864ac304b02995f1a739f33f"
+chart_alt = "Stacked bar chart of the mean days from purchase order to first clearing, split into four parts that add up. For all 3-way items, 83 days: 14 from PO to invoice date, 51 of implied payment term, 4 of process overrun and 14 waiting for a payment run. The main flow is the same, the invoice-after-GR flow is 81 days, and weighted by value it is 93 days, of which 52 are the implied term and 3 are overrun."
+
+[[project]]
 slug = "nem-demand-forecasting"
 title = "NEM Demand Forecasting"
 kind = "Forecasting for operations planning"

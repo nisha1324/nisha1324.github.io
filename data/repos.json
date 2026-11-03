@@ -104,7 +104,7 @@
     "language": "Python",
     "name": "fx-rates-pipeline",
     "private": false,
-    "pushed_at": "2026-10-30T20:56:21Z",
+    "pushed_at": "2026-11-02T23:40:07Z",
     "topics": [
       "api",
       "currency-risk",
@@ -209,6 +209,33 @@
       "pandas",
       "python",
       "time-series"
+    ]
+  },
+  "purchase-to-pay-process-mining": {
+    "archived": false,
+    "description": "Process mining on a real purchase-to-pay event log (BPI 2019, 1.6M events): 21 compliance rules, where invoices wait, rework and what to automate first, in DuckDB SQL and Python",
+    "fork": false,
+    "html_url": "https://github.com/nisha1324/purchase-to-pay-process-mining",
+    "language": "Python",
+    "name": "purchase-to-pay-process-mining",
+    "private": false,
+    "pushed_at": "2026-11-03T15:42:36Z",
+    "topics": [
+      "accounts-payable",
+      "bpi-challenge",
+      "business-analysis",
+      "data-analysis",
+      "duckdb",
+      "event-log",
+      "github-actions",
+      "internal-audit",
+      "open-data",
+      "pandas",
+      "process-mining",
+      "procurement",
+      "purchase-to-pay",
+      "python",
+      "sql"
     ]
   },
   "retail-data-cleaning-eda": {
