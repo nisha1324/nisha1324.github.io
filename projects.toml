@@ -15,6 +15,23 @@ url = "https://nisha1324.github.io/"
 og_headline = "Business analysis · Data analysis · Applied AI"
 
 [[project]]
+slug = "austender-procurement-spend"
+title = "AusTender Procurement Spend"
+kind = "Procurement spend & compliance analytics"
+finished = "2026-11-06"
+question = "Where does Australian Government contract spend go, how dependent is it on a few suppliers, and do the competition and reporting rules hold up?"
+stat = "$4.17bn"
+stat_label = "of large-category spend (7.5%) is concentrated beyond one contract. Far more, $19.11bn of common services, is bought by 20 or more agencies from long supplier tails"
+finding = "Spend, competition and compliance analytics in DuckDB SQL and Python on 59,464 contract notices first published in FY2024-25, from the official AusTender API, with every report rerun by GitHub Actions on each push. A dashboard built straight from the feed would mislead: summing every row overstates value 2.6 times, and three in four limited tenders are under the $80k line, where an open approach isn't required. Once that is fixed, 58 of 16,242 suppliers hold half of the $62.21bn committed. Only 54 of the 8,687 limited tenders from $80k cite no allowed reason, values bunch just under $80k (2.31 times the neighbouring bins) but not to avoid competition, and 51.6% of late notices come out in catch-up batches. Of $990.2m coded to Education and Training, 54.6% is programs delivered to the public, and 40.4% of notices say too little for anyone to place."
+so_what = "Supplier dependence isn't the main risk; fragmentation is. Check how much of the common spend already goes through panels and pool the rest, test whether the stated reason fits for the $5.80bn of extensions and sole sources, report on current value rather than value at award, and sign 1 July renewals before they start."
+stack = ["SQL", "DuckDB", "Python", "pandas", "REST API", "LLM categoriser", "GitHub Actions"]
+data = "AusTender OCDS API, Department of Finance (CC BY 3.0 AU)"
+data_url = "https://github.com/austender/austender-ocds-api"
+chart = "results/charts/04_family_concentration.png"
+chart_commit = "b022f303a5fc4a0da0abc358acbb942f6595f322"
+chart_alt = "Paired horizontal bar chart for the 20 largest UNSPSC families: the top supplier's share of each family's committed value, and the share held by that supplier's single largest notice. In most families the two bars are almost the same length, so the top supplier's share rests on one contract: communications devices 80% and 80%, aircraft 60% and 59%, business administration 41% and 41%. Fuels (82% against 45%) and light weapons and ammunition (58% against 26%) are concentrated beyond one contract. Computer services, $5.69bn, has a top supplier share of 16%."
+
+[[project]]
 slug = "purchase-to-pay-process-mining"
 title = "Purchase-to-Pay Process Mining"
 kind = "Process mining & audit analytics"

@@ -27,6 +27,33 @@
       "star-schema"
     ]
   },
+  "austender-procurement-spend": {
+    "archived": false,
+    "description": "Australian Government procurement spend analytics on 59,464 AusTender contract notices (FY2024-25): spend cube, supplier concentration, compliance checks and a training-spend categoriser, in DuckDB SQL and Python",
+    "fork": false,
+    "html_url": "https://github.com/nisha1324/austender-procurement-spend",
+    "language": "Python",
+    "name": "austender-procurement-spend",
+    "private": false,
+    "pushed_at": "2026-11-06T03:41:57Z",
+    "topics": [
+      "austender",
+      "australia",
+      "business-analysis",
+      "data-analysis",
+      "duckdb",
+      "github-actions",
+      "government-data",
+      "internal-audit",
+      "llm",
+      "open-data",
+      "pandas",
+      "procurement",
+      "python",
+      "spend-analytics",
+      "sql"
+    ]
+  },
   "data-quality-pipeline-duckdb": {
     "archived": false,
     "description": "Data-quality test pipeline on DuckDB: YAML-defined checks (keys, integrity, freshness, completeness) on City of Melbourne pedestrian sensor data, answering which foot-traffic reports can be trusted today",
@@ -104,7 +131,7 @@
     "language": "Python",
     "name": "fx-rates-pipeline",
     "private": false,
-    "pushed_at": "2026-11-02T23:40:07Z",
+    "pushed_at": "2026-11-05T22:08:58Z",
     "topics": [
       "api",
       "currency-risk",
