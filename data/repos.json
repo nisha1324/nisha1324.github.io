@@ -131,7 +131,7 @@
     "language": "Python",
     "name": "fx-rates-pipeline",
     "private": false,
-    "pushed_at": "2026-11-05T22:08:58Z",
+    "pushed_at": "2026-11-06T21:40:47Z",
     "topics": [
       "api",
       "currency-risk",
@@ -329,6 +329,32 @@
       "real-estate",
       "s3",
       "serverless"
+    ]
+  },
+  "skills-demand-dashboard": {
+    "archived": false,
+    "description": "Which occupations and regions are hiring in Australia? Tested job-ad demand analysis and a Streamlit dashboard on the Jobs and Skills Australia Internet Vacancy Index",
+    "fork": false,
+    "html_url": "https://github.com/nisha1324/skills-demand-dashboard",
+    "language": "Python",
+    "name": "skills-demand-dashboard",
+    "private": false,
+    "pushed_at": "2026-11-08T15:42:38Z",
+    "topics": [
+      "altair",
+      "australia",
+      "dashboard",
+      "data-analysis",
+      "github-actions",
+      "job-ads",
+      "labour-market",
+      "matplotlib",
+      "open-data",
+      "pandas",
+      "python",
+      "regional-analysis",
+      "streamlit",
+      "workforce-planning"
     ]
   },
   "sql-business-analytics": {

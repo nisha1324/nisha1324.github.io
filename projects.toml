@@ -15,6 +15,23 @@ url = "https://nisha1324.github.io/"
 og_headline = "Business analysis · Data analysis · Applied AI"
 
 [[project]]
+slug = "skills-demand-dashboard"
+title = "Skills-Demand Dashboard"
+kind = "Labour-market analysis & dashboard"
+finished = "2026-11-08"
+question = "Which occupations and regions are Australian employers advertising for, and is that demand rising or cooling?"
+stat = "30.1%"
+stat_label = "of placed job ads are now in regional Australia, up from 21.2% in 2019. Regional areas are +67.1% on 2019 against +4.9% for the capital-city regions"
+finding = "Job-ad demand analysis and a Streamlit dashboard on Jobs and Skills Australia's Internet Vacancy Index (August 2026 release), with every report rerun by GitHub Actions on each push. Read naively, the files mislead: a dashboard built straight from them would show an 18% \"slump\" from October to January every year and top its fastest-growing list with noise. With 12-month averages and a 20-ad floor, ads averaged 209,655 a month, −3.3% on the year before but +21.2% on 2019, and the latest 3 months are +0.9% on a year earlier. GPs and resident medical officers added 1,362 ads a month (+36.4%), and 47.3% of ads for medical practitioners and nurses are now regional. 22 big occupations are below 2019 and still falling, among them accountants and software programmers (−46.6% on 2019). The only regions below 2019 are Canberra & ACT, Sydney and Melbourne."
+so_what = "A recruiter who only covers the capitals is working the shrinking part of the market: grow regional desks, starting with health and care. Training providers should put health, care and electrical courses first, with regional placements, and not size ICT, accounting or sales-management intakes on 2019 demand. Check a big jump in the monthly series before acting on it."
+stack = ["Python", "pandas", "Streamlit", "Altair", "matplotlib", "pytest", "GitHub Actions"]
+data = "Internet Vacancy Index, Jobs and Skills Australia (CC BY 4.0)"
+data_url = "https://www.jobsandskills.gov.au/data/internet-vacancy-index"
+chart = "results/charts/09_regional_share.png"
+chart_commit = "d39d646ef0a35af2ef2807290d526a21a335c6d6"
+chart_alt = "Line chart of regional Australia's share of job ads, a 12-month rolling average from 2011 to August 2026, with the 2019 average of 21.2% marked. The share falls from about 23% in 2012 to about 18% in 2016, recovers to about 21% by 2020, jumps to about 28% in 2021, dips to 25.6% in 2022, then climbs to 30.1%. A second line, the lowest the share could be if every unplaced ad were a capital's, follows it closely and ends at 29.2%."
+
+[[project]]
 slug = "austender-procurement-spend"
 title = "AusTender Procurement Spend"
 kind = "Procurement spend & compliance analytics"

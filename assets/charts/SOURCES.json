@@ -55,6 +55,10 @@
     "sha256": "975e29d05b591c30ba7ddb6feaaae357f38d9bf5ac1857a559f236aae044b5a5",
     "url": "https://raw.githubusercontent.com/nisha1324/serverless-property-lake/d7acad05dd5b26abfbb8bf6f4a22ff96be01191d/results/charts/01_registration_lag.png"
   },
+  "skills-demand-dashboard.png": {
+    "sha256": "afae4e972f42709977bff60d26ac019dc48a115904f98d03373d3353155df316",
+    "url": "https://raw.githubusercontent.com/nisha1324/skills-demand-dashboard/d39d646ef0a35af2ef2807290d526a21a335c6d6/results/charts/09_regional_share.png"
+  },
   "sql-business-analytics.png": {
     "sha256": "ec675949b4aa897932cf57f3b93ea839bfbaac79031c78acf26101115bdd15bc",
     "url": "https://raw.githubusercontent.com/nisha1324/sql-business-analytics/673c03e4959b07fe264bacb866c4c0542ff47521/results/charts/cohort_retention.png"
