@@ -150,3 +150,14 @@ def test_unpublishable_repo_fails(workspace, flag):
 def test_png_size_reads_header():
     w, h = build.png_size(ROOT / "assets" / "charts" / "ecommerce-funnel-duckdb.png")
     assert (w, h) == (1200, 540)  # checked independently with Pillow
+
+
+def test_preview_card_lists_newest_projects_then_a_count():
+    import sys
+    sys.path.insert(0, str(ROOT / "scripts"))
+    import make_og_image as og
+    projects = [{"title": f"P{i}"} for i in range(og.MAX_CHIPS + 3)]
+    html = og.chips(projects)
+    assert html.count("<li>") == og.MAX_CHIPS and "<li>P0</li>" in html
+    assert f"<li>P{og.MAX_CHIPS}</li>" not in html and "+3 more" in html
+    assert "more" not in og.chips(projects[:og.MAX_CHIPS])

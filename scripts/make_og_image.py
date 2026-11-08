@@ -23,6 +23,9 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "static" / "og.png"
 W, H = 1200, 630
+# Only the newest projects fit as chips; the rest are summed up in a "+N more" chip.
+# More than this pushed the last row and the URL off the bottom of the image.
+MAX_CHIPS = 8
 
 CARD = """<!doctype html><html><head><meta charset="utf-8"><style>
 html, body {{ margin: 0; width: {w}px; height: {h}px; overflow: hidden; }}
@@ -34,6 +37,7 @@ h1 {{ font-size: 76px; margin: 0; line-height: 1.05; }}
 .count {{ font-size: 24px; text-transform: uppercase; letter-spacing: .06em; color: #52514e; margin: 0 0 14px; }}
 ul {{ list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 10px; }}
 li {{ font-size: 24px; padding: 6px 16px; border-radius: 999px; background: #f2f1ed; }}
+li.more {{ background: none; color: #52514e; }}
 .url {{ margin: auto 0 0; padding-top: 22px; font-size: 28px; font-weight: 700; color: #1f5fae; }}
 </style></head><body>
 <h1>{name}</h1>
@@ -44,6 +48,13 @@ li {{ font-size: 24px; padding: 6px 16px; border-radius: 999px; background: #f2f
 </body></html>"""
 
 
+def chips(projects: list[dict]) -> str:
+    """The newest MAX_CHIPS titles (projects.toml is newest first), then "+N more"."""
+    shown = "".join(f"<li>{escape(p['title'])}</li>" for p in projects[:MAX_CHIPS])
+    rest = len(projects) - MAX_CHIPS
+    return shown + (f'<li class="more">+{rest} more</li>' if rest > 0 else "")
+
+
 def card_html(doc: dict) -> str:
     site, projects = doc["site"], doc["project"]
     return CARD.format(
@@ -51,7 +62,7 @@ def card_html(doc: dict) -> str:
         name=escape(site["name"]),
         headline=escape(site["og_headline"]),
         count=len(projects),
-        chips="".join(f"<li>{escape(p['title'])}</li>" for p in projects),
+        chips=chips(projects),
         url=escape(site["url"].removeprefix("https://").rstrip("/")),
     )
 
