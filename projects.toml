@@ -15,6 +15,23 @@ url = "https://nisha1324.github.io/"
 og_headline = "Business analysis · Data analysis · Applied AI"
 
 [[project]]
+slug = "new-business-survival"
+title = "New-Business Survival"
+kind = "Business survival analysis & SQL benchmark"
+finished = "2026-11-11"
+question = "Which new Australian businesses are still trading three years on, by industry, size and state, and how far can a lender trust that figure?"
+stat = "49.2%"
+stat_label = "of the 406,365 businesses that entered in 2022-23 were still trading at June 2026. 44.6% of non-employing entrants were, against 61.5% of employing entrants"
+finding = "Survival analysis in pandas and DuckDB SQL on the ABS counts of business entries and exits (four entry cohorts, 557 local government areas), with every report rerun by GitHub Actions on each push. Survival fell in 16 of 19 industries from the 2019-20 to the 2022-23 cohort, and not because of a shift towards businesses without staff. Entrants with 1-4 employees out-survived non-employing ones in all 85 state × industry pairs where both are reliable (median gap +16.6 points). Compared at the same size mix, Accommodation and Food Services falls from 10th to 4th lowest (48.4% → 41.9%). Business numbers grew by 139,482 across LGAs, but employing businesses fell by 9,698, and 199 of the 303 LGAs lost employing businesses even though only 31 lost businesses overall."
+so_what = "Lenders should price a new business on its industry and size band, not the national average: reliable national rates run from 30.3% to 70.9%, and the state adjustment moves them by −1.4 points to +6.0 points. The benchmark gives that rate for each state × industry × size band with a reliability flag that belongs in the credit file. Councils should track employing businesses, not the total count, and advisers should put support in the first year, since about half of the three-year loss happens by the first June."
+stack = ["Python", "pandas", "DuckDB", "SQL", "matplotlib", "pytest", "GitHub Actions"]
+data = "Counts of Australian Businesses, including Entries and Exits, Australian Bureau of Statistics (CC BY 4.0)"
+data_url = "https://www.abs.gov.au/statistics/economy/business-indicators/counts-australian-businesses-including-entries-and-exits"
+chart = "results/charts/07_common_size_mix.png"
+chart_commit = "c1a9b97ec687135ddae333b179038b8f7ac04d95"
+chart_alt = "Dot plot of the 19 industries' share of 2021-22 entrants still trading at June 2025, ranked from lowest at the national size mix. Each industry has two dots: its overall rate at its own size mix and its rate at the national size mix. Accommodation and Food Services moves furthest, dropping to 4th lowest; Transport, Postal and Warehousing rises by 3.0 points but stays 2nd lowest. Public Administration and Safety is lowest at about 35% and Agriculture, Forestry and Fishing highest at about 62%."
+
+[[project]]
 slug = "skills-demand-dashboard"
 title = "Skills-Demand Dashboard"
 kind = "Labour-market analysis & dashboard"

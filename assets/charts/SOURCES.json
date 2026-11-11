@@ -39,6 +39,10 @@
     "sha256": "85d5dd6099bc49a5b3bd2f181f9ebc01f3ef5aba4bd4240ff48ada8abf7ff9c6",
     "url": "https://raw.githubusercontent.com/nisha1324/nem-demand-forecasting/17b189dc58b3722ee7873d08b895cdcf53d61217/results/charts/buffer_promise_kept.png"
   },
+  "new-business-survival.png": {
+    "sha256": "77ae49c3f3317e9c8c4a789f21ea3f15b01b1d78d024a4a17f002a71426236c7",
+    "url": "https://raw.githubusercontent.com/nisha1324/new-business-survival/c1a9b97ec687135ddae333b179038b8f7ac04d95/results/charts/07_common_size_mix.png"
+  },
   "purchase-to-pay-process-mining.png": {
     "sha256": "42110f645112e6b4ce03a4db744fc32126ee0fcb4af31f3f981616b0eedc4441",
     "url": "https://raw.githubusercontent.com/nisha1324/purchase-to-pay-process-mining/c2d74a3cb40ceeaf864ac304b02995f1a739f33f/results/charts/09_where_the_days_go.png"
