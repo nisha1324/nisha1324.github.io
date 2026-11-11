@@ -131,7 +131,7 @@
     "language": "Python",
     "name": "fx-rates-pipeline",
     "private": false,
-    "pushed_at": "2026-11-06T21:40:47Z",
+    "pushed_at": "2026-11-10T21:51:41Z",
     "topics": [
       "api",
       "currency-risk",
@@ -236,6 +236,32 @@
       "pandas",
       "python",
       "time-series"
+    ]
+  },
+  "new-business-survival": {
+    "archived": false,
+    "description": "Which industries, sizes and states new Australian businesses survive in: tested pandas + DuckDB SQL analysis of ABS business entries and exits, with a survival benchmark for lenders and advisers",
+    "fork": false,
+    "html_url": "https://github.com/nisha1324/new-business-survival",
+    "language": "Python",
+    "name": "new-business-survival",
+    "private": false,
+    "pushed_at": "2026-11-11T04:01:47Z",
+    "topics": [
+      "abs-data",
+      "australia",
+      "business-analytics",
+      "credit-risk",
+      "data-analysis",
+      "duckdb",
+      "github-actions",
+      "matplotlib",
+      "open-data",
+      "pandas",
+      "python",
+      "regional-analysis",
+      "small-business",
+      "sql"
     ]
   },
   "purchase-to-pay-process-mining": {
