@@ -131,7 +131,7 @@
     "language": "Python",
     "name": "fx-rates-pipeline",
     "private": false,
-    "pushed_at": "2026-11-10T21:51:41Z",
+    "pushed_at": "2026-11-20T22:43:27Z",
     "topics": [
       "api",
       "currency-risk",
@@ -246,7 +246,7 @@
     "language": "Python",
     "name": "new-business-survival",
     "private": false,
-    "pushed_at": "2026-11-11T04:01:47Z",
+    "pushed_at": "2026-11-11T04:08:25Z",
     "topics": [
       "abs-data",
       "australia",
@@ -289,6 +289,32 @@
       "purchase-to-pay",
       "python",
       "sql"
+    ]
+  },
+  "qld-emergency-department-performance": {
+    "archived": false,
+    "description": "Queensland public hospital emergency departments, 2023-2026: waiting times and 4-hour stays as an operations and SLA analysis. Triage-mix split, a peer-group hospital scorecard, admitted vs not-admitted streams, and a DuckDB star schema with DAX for Power BI.",
+    "fork": false,
+    "html_url": "https://github.com/nisha1324/qld-emergency-department-performance",
+    "language": "Python",
+    "name": "qld-emergency-department-performance",
+    "private": false,
+    "pushed_at": "2026-11-22T03:41:13Z",
+    "topics": [
+      "data-analysis",
+      "dax",
+      "duckdb",
+      "emergency-department",
+      "github-actions",
+      "healthcare-analytics",
+      "open-data",
+      "operations-analytics",
+      "pandas",
+      "power-bi",
+      "python",
+      "queensland",
+      "sql",
+      "star-schema"
     ]
   },
   "retail-data-cleaning-eda": {
