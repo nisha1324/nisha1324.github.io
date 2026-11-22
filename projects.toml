@@ -15,6 +15,23 @@ url = "https://nisha1324.github.io/"
 og_headline = "Business analysis · Data analysis · Applied AI"
 
 [[project]]
+slug = "qld-emergency-department-performance"
+title = "Queensland ED Performance"
+kind = "Operations & service-level analysis"
+finished = "2026-11-22"
+question = "Where do patients wait in Queensland's public hospital emergency departments, and which hospitals should a health service look at first?"
+stat = "16 of 22"
+stat_label = "large hospitals slipped on 4-hour stays by more than chance could explain between Apr-Jun 2024 and Apr-Jun 2026. Those 22 hospitals handle 70.2% of attendances"
+finding = "Operations analysis in pandas and DuckDB SQL on Queensland Health's quarterly emergency department data (14 quarters, 105 hospitals), with every report rerun by GitHub Actions on each push. In Apr-Jun 2026, 56.1% of ED stays were within 4 hours, down from 61% in the same quarter of 2023, although patients were being seen sooner (74.6% within the recommended time, up from 71%). A more urgent mix of patients is 37% of the two-year fall, and the rate fell in all five triage categories. Against hospitals of their own size, 35 of 104 hospitals slipped by more than chance and 12 improved, while 45 of the 57 small hospitals show no clear change. It is not only a bed problem: admitted patients are 29.0% of attendances and 45% of the within-category fall, and of the 35 hospitals slipping, 32 are slipping among patients who were not admitted. A star-schema model with 27 DAX measures carries the results into Power BI."
+so_what = "Start reviews with the 12 hospitals that are below their peers and slipping, not with the bottom of a league table, and let the stream decide who is in the room: bed managers where only admitted patients are slower, the ED's own processes where only the others are. Compare each hospital with hospitals of its size, since against the state's 56.1% 20 of the 22 large hospitals are below and all 57 small hospitals are above. Do not act on one small hospital's swing: its chance bar is about ±2.9 points."
+stack = ["Python", "pandas", "DuckDB", "SQL", "Power BI (DAX)", "matplotlib", "pytest", "GitHub Actions"]
+data = "Emergency departments - quarterly data, Queensland Health (CC BY 4.0)"
+data_url = "https://www.data.qld.gov.au/dataset/emergency-departments-quarterly-data"
+chart = "results/charts/07_large_hospital_trend.png"
+chart_commit = "8b25cc070901aea5ed4ad06a07fca79c4ce77302"
+chart_alt = "Dot plot of the 22 large Queensland hospitals, ranked by their within-category change in ED stays within 4 hours from Apr-Jun 2024 to Apr-Jun 2026, each with a line showing its chance bar. 16 are slipping, from Queen Elizabeth II at about −8 points to Princess Alexandra at about −2; Ipswich and Cairns show no clear change; Mater Brisbane, Caboolture, Toowoomba and Queensland Children's are improving, Queensland Children's by about 9 points. Published rates are listed beside each hospital, for example Queen Elizabeth II 45.3% to 37.3% and Queensland Children's 63.2% to 70.8%."
+
+[[project]]
 slug = "new-business-survival"
 title = "New-Business Survival"
 kind = "Business survival analysis & SQL benchmark"

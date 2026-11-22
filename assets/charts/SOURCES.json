@@ -47,6 +47,10 @@
     "sha256": "42110f645112e6b4ce03a4db744fc32126ee0fcb4af31f3f981616b0eedc4441",
     "url": "https://raw.githubusercontent.com/nisha1324/purchase-to-pay-process-mining/c2d74a3cb40ceeaf864ac304b02995f1a739f33f/results/charts/09_where_the_days_go.png"
   },
+  "qld-emergency-department-performance.png": {
+    "sha256": "2d7113bed70775869b07c7be09885c0114b459952dbbe70e5af1c06eae034e05",
+    "url": "https://raw.githubusercontent.com/nisha1324/qld-emergency-department-performance/8b25cc070901aea5ed4ad06a07fca79c4ce77302/results/charts/07_large_hospital_trend.png"
+  },
   "retail-data-cleaning-eda.png": {
     "sha256": "fa32620fc0766fc329086bdf98df83adcb4642feffc3cbb50e6d06cde5f22d89",
     "url": "https://raw.githubusercontent.com/nisha1324/retail-data-cleaning-eda/b5412df88dd18fb911a669143af2eb97bbd89b61/results/charts/05_customer_pareto.png"
