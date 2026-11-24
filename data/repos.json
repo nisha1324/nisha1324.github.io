@@ -1,4 +1,30 @@
 {
+  "ab-test-readout": {
+    "archived": false,
+    "description": "A/B test readout on 78 real e-commerce experiments (ASOS Digital Experiments Dataset): sample-ratio and data checks, effect sizes and sample sizes, the cost of daily peeking with an always-valid rule, and a go/no-go memo with guard rails. DuckDB SQL + Python.",
+    "fork": false,
+    "html_url": "https://github.com/nisha1324/ab-test-readout",
+    "language": "Python",
+    "name": "ab-test-readout",
+    "private": false,
+    "pushed_at": "2026-11-24T16:15:26Z",
+    "topics": [
+      "ab-testing",
+      "business-analytics",
+      "data-analysis",
+      "decision-making",
+      "duckdb",
+      "experimentation",
+      "hypothesis-testing",
+      "pandas",
+      "product-analytics",
+      "python",
+      "scipy",
+      "sequential-testing",
+      "sql",
+      "statistics"
+    ]
+  },
   "airline-ontime-dbt-warehouse": {
     "archived": false,
     "description": "Star-schema warehouse (dbt-core + DuckDB) for Australian domestic airline on-time performance, BITRE open data",
@@ -131,7 +157,7 @@
     "language": "Python",
     "name": "fx-rates-pipeline",
     "private": false,
-    "pushed_at": "2026-11-20T22:43:27Z",
+    "pushed_at": "2026-11-24T02:58:22Z",
     "topics": [
       "api",
       "currency-risk",
