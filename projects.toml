@@ -15,6 +15,23 @@ url = "https://nisha1324.github.io/"
 og_headline = "Business analysis · Data analysis · Applied AI"
 
 [[project]]
+slug = "ab-test-readout"
+title = "A/B Test Readout"
+kind = "Experiment analysis & decision rules"
+finished = "2026-11-24"
+question = "A product team asks \"do we launch?\" What does it take to give an answer that holds, across 78 real online experiments?"
+stat = "148"
+stat_label = "results called by stopping at the first daily p < 0.05 across 265 replayed tests, where the end of the test supports 78. The simulated false-alarm rate of that habit is 17.6%, not 5%"
+finding = "Experiment analysis in DuckDB SQL and Python (Welch tests, confidence intervals for the relative change, sample sizes, Holm and Benjamini-Hochberg corrections, an always-valid sequential rule) on the ASOS Digital Experiments Dataset: 78 real experiments, 99 treatment arms and four metrics per arm, with every report rerun by GitHub Actions on each push. 37 of the 99 arms carry a caution before any metric is read: testing every split against 50/50 raises 12 alarms, only 4 of which look like users going missing, and 26 arms ended within a week, were first recorded late or have a hole in the record. Real changes are small: 97 of 325 tests are significant where about 16 would be by chance, the median significant change is 0.76%, and detecting a 1% change takes about 639,000 (metric 1) to 1,847,000 (metric 4) users per group. An always-valid rule, confirmed on the next look, keeps simulated false alarms at 0.7% and found 48 of the 78 lasting results a median of 24 days early. Replaying the snapshots also exposed 50 blips in the data that checks on user counts cannot see."
+so_what = "Write the decision rule down before the test: the primary metric and which direction is good, the guard rails, the margin worth having, the intended split and the end date. Here the direction alone changes 38 of 99 verdicts and the choice of primary 21 of 78. With the rule fixed, 13 of 99 treatments are a launch if higher is better, where \"launch if any metric is significantly higher\" would pick 20. Read every guard rail: half of the 20 \"do not launch\" verdicts come from a guard rail in a test whose primary did not move."
+stack = ["Python", "pandas", "DuckDB", "SQL", "SciPy", "statistics", "matplotlib", "pytest", "GitHub Actions"]
+data = "ASOS Digital Experiments Dataset, Liu, Cardoso, Couturier and McCoy (CC BY 4.0)"
+data_url = "https://osf.io/64jsb/"
+chart = "results/charts/09_results_by_rule.png"
+chart_commit = "65c6fd6f82537bb0be14d99f681465c777245f89"
+chart_alt = "Horizontal bar chart of how many of 265 replayed tests each rule calls a result, split into tests significant at the end and tests that are not. End only (Part 2): 78. Daily peeking: 148, 70 of them not significant at the end. Daily peeking, confirmed on two looks: 118, 45 not significant at the end. Always-valid: 83, 26 not significant at the end. Always-valid, confirmed: 59, 11 not significant at the end. A marker on each bar shows how many would be expected if no treatment changed anything: about 13 for reading once at the end, 47 for daily peeking, 38 for confirmed peeking, and 3 and 2 for the two always-valid rules."
+
+[[project]]
 slug = "qld-emergency-department-performance"
 title = "Queensland ED Performance"
 kind = "Operations & service-level analysis"

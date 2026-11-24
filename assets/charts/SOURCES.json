@@ -1,4 +1,8 @@
 {
+  "ab-test-readout.png": {
+    "sha256": "9609d4e54eb02ebd81dc471a90348d1918965ee313e0a07a2653776a534127b8",
+    "url": "https://raw.githubusercontent.com/nisha1324/ab-test-readout/65c6fd6f82537bb0be14d99f681465c777245f89/results/charts/09_results_by_rule.png"
+  },
   "airline-ontime-dbt-warehouse.png": {
     "sha256": "26c36d09c21fa82f63157a74e55c5313a1c1278e12dd95fcbee719c0dfb0c0d8",
     "url": "https://raw.githubusercontent.com/nisha1324/airline-ontime-dbt-warehouse/2256c01681cc28fb787a9d085c76fc55fbaad6c4/results/charts/same_route_airlines.png"
