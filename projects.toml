@@ -15,6 +15,23 @@ url = "https://nisha1324.github.io/"
 og_headline = "Business analysis · Data analysis · Applied AI"
 
 [[project]]
+slug = "consumer-complaints-analytics"
+title = "Consumer Complaints Analytics"
+kind = "Complaints analytics & early-warning monitoring"
+finished = "2026-11-27"
+question = "Which products and companies draw complaints, how do companies answer them, and what would a weekly monitor have caught, across 658,443 US consumer-finance complaints?"
+stat = "19 of 24"
+stat_label = "spike months since 2011 in which one company makes up half or more of the extra complaints. In all 24 the two largest companies do"
+finding = "Complaints analytics in DuckDB SQL and Python on the US CFPB Consumer Complaint Database (658,443 complaints in FY2026, read against 19,397,176 since 2011), with every report rerun by GitHub Actions on each push. Spikes hide the trend: counted as filed, money-transfer complaints fell 50.1% from FY2025 to FY2026, but with the spike months set to their baseline they rose 37.1%, and underneath complaints grew in 9 of 10 products. Relief rates do not compare well across companies: 381 of the 419 companies with 100+ final responses are further from peers with the same products and issues than chance allows, and in debt collection 190 of 259 collectors record under 2% relief while 8 record over 90%. The year's rise in relief, from 18.3% to 21.2%, is one company: without CL Holdings LLC the rate is flat (18.9% to 18.8%). A weekly early-warning monitor, backtested on FY2026, would have sent 61 items in 43 weeks."
+so_what = "Check for a spike and find the company behind it before reading any year-on-year change in complaints, and report the figure both ways. Compare your relief rate with your own history, not with other companies' published rates. Run a weekly monitor on complaints per company and issue and on relief and late rates: about 1.4 items a week, never more than 6. Remove identical repeats first (12 of its 49 surges do not survive without them), and check whether competitors alerted on the same issue before treating a surge as your own failure (20 of 49 were shared)."
+stack = ["Python", "pandas", "DuckDB", "SQL", "statistics", "matplotlib", "pytest", "GitHub Actions"]
+data = "Consumer Complaint Database, US Consumer Financial Protection Bureau (public domain)"
+data_url = "https://www.consumerfinance.gov/data-research/consumer-complaints/"
+chart = "results/charts/11_relief_by_month.png"
+chart_commit = "056ae44b0ad4e46354e61dba3be5eba98860b20b"
+chart_alt = "Line chart of the share of final responses closed with relief by month received, October 2025 to September 2026. All companies: about 20% in October, falling to about 17% from February to April, then jumping to 21.3% in May and rising to 22.9% by September. The rate expected from each month's product and issue mix stays between about 19.4% and 20.0%. Without CL Holdings LLC the rate stays between about 17.8% and 20.6% and ends at 19.5%, close to the expected line. The subtitle says CL Holdings closed under 8% of complaints with relief each month to April and around 90% from May."
+
+[[project]]
 slug = "ab-test-readout"
 title = "A/B Test Readout"
 kind = "Experiment analysis & decision rules"

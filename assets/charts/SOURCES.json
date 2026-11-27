@@ -11,6 +11,10 @@
     "sha256": "26c652af9c91480a3d350e2b7102074caf7e4e826caf9e4e5d705cc84cc4581d",
     "url": "https://raw.githubusercontent.com/nisha1324/austender-procurement-spend/b022f303a5fc4a0da0abc358acbb942f6595f322/results/charts/04_family_concentration.png"
   },
+  "consumer-complaints-analytics.png": {
+    "sha256": "01eb9039014bc4d89ea48eae6c41bb0665fc9df13a39524c1f88df29ed5ff342",
+    "url": "https://raw.githubusercontent.com/nisha1324/consumer-complaints-analytics/056ae44b0ad4e46354e61dba3be5eba98860b20b/results/charts/11_relief_by_month.png"
+  },
   "data-quality-pipeline-duckdb.png": {
     "sha256": "f0b8319afc14c79b9969641153e5ae1c657e4dcfa2133a6c236a956dc65b6bef",
     "url": "https://raw.githubusercontent.com/nisha1324/data-quality-pipeline-duckdb/f791449aa12c173fcf32fa501a8969960df3cc99/results/charts/03_monthly_undercount.png"
