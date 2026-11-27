@@ -80,6 +80,32 @@
       "sql"
     ]
   },
+  "consumer-complaints-analytics": {
+    "archived": false,
+    "description": "Consumer-complaints analytics on the CFPB database (658k FY2026 complaints, 19.4M since 2011): spikes and the companies behind them, relief and late responses against peers with funnel limits, and a weekly early-warning monitor backtested on a year. DuckDB SQL + Python.",
+    "fork": false,
+    "html_url": "https://github.com/nisha1324/consumer-complaints-analytics",
+    "language": "Python",
+    "name": "consumer-complaints-analytics",
+    "private": false,
+    "pushed_at": "2026-11-27T04:07:37Z",
+    "topics": [
+      "anomaly-detection",
+      "business-analytics",
+      "cfpb",
+      "complaints-management",
+      "compliance",
+      "customer-experience",
+      "data-analysis",
+      "data-quality",
+      "duckdb",
+      "financial-services",
+      "open-data",
+      "pandas",
+      "python",
+      "sql"
+    ]
+  },
   "data-quality-pipeline-duckdb": {
     "archived": false,
     "description": "Data-quality test pipeline on DuckDB: YAML-defined checks (keys, integrity, freshness, completeness) on City of Melbourne pedestrian sensor data, answering which foot-traffic reports can be trusted today",
@@ -157,7 +183,7 @@
     "language": "Python",
     "name": "fx-rates-pipeline",
     "private": false,
-    "pushed_at": "2026-11-24T02:58:22Z",
+    "pushed_at": "2026-11-27T00:41:51Z",
     "topics": [
       "api",
       "currency-risk",
